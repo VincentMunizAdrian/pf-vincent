@@ -1,0 +1,874 @@
+/* caracteristicas maquinas */
+
+.gridMaquinas {
+    display: grid;
+    grid-template-areas: 
+    "tituloMaquinas"
+    "listaMaquinas"
+    "maquina1"
+    "maquina2"
+    "maquina3"
+    "maquina4"
+    "maquina5";
+    grid-gap: 2rem;
+    grid-template-columns: 100%;
+    grid-template-rows: 31rem 18rem repeat(5, auto);
+    padding: 2rem;
+}
+
+.textoM1 p, .textoM2 p, .textoM3 p, .textoM4 p, .textoM5 p {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloMaquinas {
+    grid-area: tituloMaquinas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#listaMaquinas {
+    grid-area: listaMaquinas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#maquina1 {
+    grid-area: maquina1;
+    display: grid;
+    grid-template-areas:
+    "tituloMaquinas1 ." 
+    "textoM1 imgM1";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto;
+    grid-gap: 2rem;
+    align-items: center;
+}
+
+.tituloMaquinas1 {
+    grid-area: tituloMaquinas1;
+    display: flex;
+    margin-top: 18rem;
+}
+
+.textoM1 {
+    grid-area: textoM1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.imgM1 {
+    grid-area: imgM1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgM1 img {
+    height: 42.8rem;
+    width: 76.15rem;
+    display: flex;
+}
+
+#maquina2 {
+    grid-area: maquina2;
+    display: grid;
+    grid-template-areas: 
+    "tituloMaquinas2 ."
+    "textoM2 imgM2";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto;
+    grid-gap: 2rem;
+    align-items: center;
+}
+
+.tituloMaquinas2 {
+    grid-area: tituloMaquinas2;
+    display: flex;
+    margin-top: 18rem;
+}
+
+.textoM2 {
+    grid-area: textoM2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.imgM2 {
+    grid-area: imgM2;
+}
+
+#maquina3 {
+    grid-area: maquina3;
+    display: grid;
+    grid-template-areas: 
+    "tituloMaquinas3 ."
+    "textoM3 imgM3";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto;
+    grid-gap: 2rem;
+    align-items: center;
+}
+
+.tituloMaquinas3 {
+    grid-area: tituloMaquinas3;
+    display: flex;
+    margin-top: 18rem;
+}
+
+.textoM3 {
+    grid-area: textoM3;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.imgM3 {
+    grid-area: imgM3;
+}
+
+#maquina4 {
+    grid-area: maquina4;
+    display: grid;
+    grid-template-areas: 
+    "tituloMaquinas4 ."
+    "textoM4 imgM4";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto;
+    grid-gap: 2rem;
+    align-items: center;
+}
+
+.tituloMaquinas4 {
+    grid-area: tituloMaquinas4;
+    display: flex;
+    margin-top: 18rem;
+}
+
+.textoM4 {
+    grid-area: textoM4;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.imgM4 {
+    grid-area: imgM4;
+}
+
+#maquina5 {
+    grid-area: maquina5;
+    display: grid;
+    grid-template-areas: 
+    "tituloMaquinas5 ."
+    "textoM5 imgM5";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto;
+    grid-gap: 2rem;
+    align-items: center;
+}
+
+.tituloMaquinas5 {
+    grid-area: tituloMaquinas5;
+    display: flex;
+    margin-top: 18rem;
+}
+
+.textoM5 {
+    grid-area: textoM5;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.imgM5 {
+    grid-area: imgM5;
+}
+
+@media screen and (max-width: 1200px) {
+
+.imgM1, .imgM2, .imgM3, .imgM4, .imgM5 {
+    img {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 250px;
+    }
+}
+    
+.listMaq {
+    font-size: 20px;
+    list-style-type: none;
+    text-align: center;
+    display: list-item;
+        a {
+            color: #0B2545;
+            text-decoration: none;
+        }
+}
+
+.gridMaquinas {
+    display: grid;
+    grid-template-areas: 
+    "tMaquinas"
+    "listaMaquinas"
+    "maquina1"
+    "maquina2"
+    "maquina3"
+    "maquina4"
+    "maquina5";
+    grid-gap: 30px;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 150px repeat(5, 600px);
+    padding: 0px 20px;
+}
+
+.tituloMaquinas {
+    grid-area: tMaquinas;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.listaMaquinas {
+    grid-area: listaMaquinas;
+}
+
+#maquina1 {
+    grid-area: maquina1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+    .tituloMaquinas1 {
+        text-align: start;
+            
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+    .textoM1 {
+        align-content: center;
+        justify-content: center;
+        
+            p {
+                font-size: 15px;
+            }
+        }
+    
+    .imgM1 {
+        align-content: center;
+        justify-content: center;
+        }
+    }
+}    
+
+#maquina2 {
+    grid-area: maquina2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+    .tituloMaquinas2 {
+        text-align: start;
+            
+            h2 {
+                font-size: 30px;
+            }
+    }
+
+    .textoM2 {
+        align-content: center;
+        justify-content: center;
+        
+            p {
+                font-size: 15px;
+        }
+    }
+    
+    .imgM2 {
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+#maquina3 {
+    grid-area: maquina3;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+    .tituloMaquinas3 {
+        text-align: start;
+            
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+    .textoM3 {
+        align-content: center;
+        justify-content: center;
+        
+            p {
+                font-size: 15px;
+            }
+        }
+    
+    .imgM3 {
+        align-content: center;
+        justify-content: center;
+        }
+}
+
+#maquina4 {
+    grid-area: maquina4;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+    .tituloMaquinas4 {
+        text-align: start;
+            
+            h2 {
+                font-size: 30px;
+            }
+    }
+
+.textoM4 {
+    align-content: center;
+    justify-content: center;
+        
+        p {
+            font-size: 15px;
+        }
+    }
+    
+.imgM4 {
+    align-content: center;
+    justify-content: center;
+    }
+}
+
+#maquina5 {
+    grid-area: maquina5;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+    .tituloMaquinas5 {
+        text-align: start;
+            
+            h2 {
+                font-size: 30px;
+            }
+    }
+
+.textoM5 {
+    align-content: center;
+    justify-content: center;
+        
+        p {
+            font-size: 15px;
+        }
+    }
+    
+.imgM5 {
+    align-content: center;
+    justify-content: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .imgM1, .imgM2, .imgM3, .imgM4, .imgM5 {
+        img {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 952px;
+            height: 250px;
+        }
+    }
+        
+    .listMaq {
+        font-size: 20px;
+        list-style-type: none;
+        text-align: center;
+        display: list-item;
+            a {
+                color: #0B2545;
+                text-decoration: none;
+            }
+    }
+    
+    .gridMaquinas {
+        display: grid;
+        grid-template-areas: 
+        "tMaquinas"
+        "listaMaquinas"
+        "maquina1"
+        "maquina2"
+        "maquina3"
+        "maquina4"
+        "maquina5";
+        grid-gap: 30px;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 150px repeat(5, 600px);
+        padding: 0px 20px;
+    }
+
+    .tituloMaquinas {
+        grid-area: tMaquinas;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .listaMaquinas {
+        grid-area: listaMaquinas;
+    }
+
+    #maquina1 {
+        grid-area: maquina1;
+    }
+
+    #maquina2 {
+        grid-area: maquina2;
+    }
+
+    #maquina3 {
+        grid-area: maquina3;
+    }
+
+    #maquina4 {
+        grid-area: maquina4;
+    }
+
+    #maquina5 {
+        grid-area: maquina5;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .imgM1, .imgM2, .imgM3, .imgM4, .imgM5 {
+        img {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            height: 250px;
+        }
+    }
+        
+    .listMaq {
+        font-size: 20px;
+        list-style-type: none;
+        text-align: center;
+        display: list-item;
+            a {
+                color: #0B2545;
+                text-decoration: none;
+            }
+    }
+    
+    .gridMaquinas {
+        display: grid;
+        grid-template-areas: 
+        "tMaquinas"
+        "listaMaquinas"
+        "maquina1"
+        "maquina2"
+        "maquina3"
+        "maquina4"
+        "maquina5";
+        grid-gap: 30px;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 150px repeat(5, 600px);
+        padding: 0px 20px;
+    }
+
+    .tituloMaquinas {
+        grid-area: tMaquinas;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .listaMaquinas {
+        grid-area: listaMaquinas;
+    }
+
+    #maquina1 {
+        grid-area: maquina1;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        
+        .tituloMaquinas1 {
+            text-align: start;
+                
+                h2 {
+                    font-size: 30px;
+                }
+            }
+
+        .textoM1 {
+            align-content: center;
+            justify-content: center;
+            
+                p {
+                    font-size: 15px;
+                }
+            }
+        
+        .imgM1 {
+            align-content: center;
+            justify-content: center;
+            }
+        }
+    }    
+    
+    #maquina2 {
+        grid-area: maquina2;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        
+        .tituloMaquinas2 {
+            text-align: start;
+                
+                h2 {
+                    font-size: 30px;
+                }
+        }
+
+        .textoM2 {
+            align-content: center;
+            justify-content: center;
+            
+                p {
+                    font-size: 15px;
+            }
+        }
+        
+        .imgM2 {
+            align-content: center;
+            justify-content: center;
+        }
+    }
+
+    #maquina3 {
+        grid-area: maquina3;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        
+        .tituloMaquinas3 {
+            text-align: start;
+                
+                h2 {
+                    font-size: 30px;
+                }
+            }
+
+        .textoM3 {
+            align-content: center;
+            justify-content: center;
+            
+                p {
+                    font-size: 15px;
+                }
+            }
+        
+        .imgM3 {
+            align-content: center;
+            justify-content: center;
+            }
+    }
+
+    #maquina4 {
+        grid-area: maquina4;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        
+        .tituloMaquinas4 {
+            text-align: start;
+                
+                h2 {
+                    font-size: 30px;
+                }
+        }
+
+    .textoM4 {
+        align-content: center;
+        justify-content: center;
+            
+            p {
+                font-size: 15px;
+            }
+        }
+        
+    .imgM4 {
+        align-content: center;
+        justify-content: center;
+        }
+    }
+
+    #maquina5 {
+        grid-area: maquina5;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        
+        .tituloMaquinas5 {
+            text-align: start;
+                
+                h2 {
+                    font-size: 30px;
+                }
+        }
+
+    .textoM5 {
+        align-content: center;
+        justify-content: center;
+            
+            p {
+                font-size: 15px;
+            }
+        }
+        
+    .imgM5 {
+        align-content: center;
+        justify-content: center;
+        }
+    }
+
+@media screen and (max-width: 480px) {
+    .imgM1, .imgM2, .imgM3, .imgM4, .imgM5 {
+        img {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            height: 250px;
+        }
+    }
+        
+    .listMaq {
+        font-size: 20px;
+        list-style-type: none;
+        text-align: center;
+        display: list-item;
+            a {
+                color: #0B2545;
+                text-decoration: none;
+            }
+    }
+    
+    .gridMaquinas {
+        display: grid;
+        grid-template-areas: 
+        "tMaquinas"
+        "listaMaquinas"
+        "maquina1"
+        "maquina2"
+        "maquina3"
+        "maquina4"
+        "maquina5";
+        grid-gap: 30px;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 150px repeat(5, 600px);
+        padding: 0px 20px;
+    }
+
+    .tituloMaquinas {
+        grid-area: tMaquinas;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .listaMaquinas {
+        grid-area: listaMaquinas;
+    }
+
+    #maquina1 {
+        grid-area: maquina1;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        
+        .tituloMaquinas1 {
+            text-align: start;
+                
+                h2 {
+                    font-size: 30px;
+                }
+            }
+
+        .textoM1 {
+            align-content: center;
+            justify-content: center;
+            
+                p {
+                    font-size: 15px;
+                }
+            }
+        
+        .imgM1 {
+            align-content: center;
+            justify-content: center;
+            }
+        }
+    }    
+    
+    #maquina2 {
+        grid-area: maquina2;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        
+        .tituloMaquinas2 {
+            text-align: start;
+                
+                h2 {
+                    font-size: 30px;
+                }
+        }
+
+        .textoM2 {
+            align-content: center;
+            justify-content: center;
+            
+                p {
+                    font-size: 15px;
+            }
+        }
+        
+        .imgM2 {
+            align-content: center;
+            justify-content: center;
+        }
+    }
+
+    #maquina3 {
+        grid-area: maquina3;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        
+        .tituloMaquinas3 {
+            text-align: start;
+                
+                h2 {
+                    font-size: 30px;
+                }
+            }
+
+        .textoM3 {
+            align-content: center;
+            justify-content: center;
+            
+                p {
+                    font-size: 15px;
+                }
+            }
+        
+        .imgM3 {
+            align-content: center;
+            justify-content: center;
+            }
+    }
+
+    #maquina4 {
+        grid-area: maquina4;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        
+        .tituloMaquinas4 {
+            text-align: start;
+                
+                h2 {
+                    font-size: 30px;
+                }
+        }
+
+    .textoM4 {
+        align-content: center;
+        justify-content: center;
+            
+            p {
+                font-size: 15px;
+            }
+        }
+        
+    .imgM4 {
+        align-content: center;
+        justify-content: center;
+        }
+    }
+
+    #maquina5 {
+        grid-area: maquina5;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        
+        .tituloMaquinas5 {
+            text-align: start;
+                
+                h2 {
+                    font-size: 30px;
+                }
+        }
+
+    .textoM5 {
+        align-content: center;
+        justify-content: center;
+            
+            p {
+                font-size: 15px;
+            }
+        }
+        
+    .imgM5 {
+        align-content: center;
+        justify-content: center;
+        }
+    }

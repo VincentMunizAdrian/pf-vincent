@@ -1,0 +1,604 @@
+/* caracteristicas trabajos */
+
+.gridTrabajos {
+    grid-area: section;
+    height: 100%;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-areas: 
+    "tituloTrabajos"
+    "galeria"
+    "video"
+    "testimonios";
+    grid-column: 100%;
+    grid-template-rows: repeat(4, auto);
+    align-content: center;
+    justify-content: center;
+}
+
+.tituloTrabajos {
+    grid-area: tituloTrabajos;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.cajaGaleria {
+    grid-area: galeria;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.galeria__titulo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.cajaImagenes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.galeria1, .galeria2, .galeria3, .galeria4 {
+    border: solid #134074;
+    width: 20rem;
+    height: 20rem;
+}
+
+.galeriaMomentanea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 3rem;
+}
+
+.video {
+    grid-area: video;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.video__titulo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.cajaVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonios {
+    grid-area: testimonios;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.cajaTestimonio {
+    border: solid #0B2545;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 460px;
+}
+
+.testimonios__titulo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.testimonios__foto {
+    width: 9rem;
+}
+
+.testimonios__texto {
+    font-size: 2rem;
+}
+
+
+/* Grid Index 1200px */
+
+@media screen and (max-width: 1200px) {
+    .gridTrabajos {
+        grid-area: section;
+        height: 100%;
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-areas: 
+        "tituloTrabajos"
+        "galeria"
+        "video"
+        "testimonios";
+        grid-column: 1200px;
+        grid-template-rows: repeat(4, auto);
+        align-content: center;
+        justify-content: center;
+    }
+
+    .tituloTrabajos {
+        grid-area: tituloTrabajos;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cajaGaleria {
+        grid-area: galeria;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .galeria__titulo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cajaImagenes {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .galeria1, .galeria2, .galeria3, .galeria4 {
+        border: solid #134074;
+        width: 20rem;
+        height: 20rem;
+    }
+    
+    .galeriaMomentanea {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 40px;
+        margin-top: 3rem;
+    }
+    
+    .video {
+        grid-area: video;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .video__titulo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cajaVideo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .testimonios {
+        grid-area: testimonios;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cajaTestimonio {
+        border: solid #0B2545;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 460px;
+    }
+    
+    .testimonios__titulo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .testimonios__foto {
+        width: 9rem;
+    }
+    
+    .testimonios__texto {
+        font-size: 2rem;
+    }
+}
+
+/* Grid Index 992px */
+
+@media screen and (max-width: 992px) {
+    .gridTrabajos {
+        grid-area: section;
+        height: 100%;
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-areas: 
+        "tituloTrabajos"
+        "galeria"
+        "video"
+        "testimonios";
+        grid-column: 992px;
+        grid-template-rows: repeat(4, auto);
+        align-content: center;
+        justify-content: center;
+    }
+
+    .tituloTrabajos {
+        grid-area: tituloTrabajos;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cajaGaleria {
+        grid-area: galeria;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .galeria__titulo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cajaImagenes {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .galeria1, .galeria2, .galeria3, .galeria4 {
+        border: solid #134074;
+        width: 20rem;
+        height: 20rem;
+    }
+    
+    .galeriaMomentanea {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 40px;
+        margin-top: 3rem;
+    }
+    
+    .video {
+        grid-area: video;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .video__titulo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cajaVideo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .testimonios {
+        grid-area: testimonios;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cajaTestimonio {
+        border: solid #0B2545;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 460px;
+    }
+    
+    .testimonios__titulo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .testimonios__foto {
+        width: 9rem;
+    }
+    
+    .testimonios__texto {
+        font-size: 2rem;
+    }
+}
+
+/* Grid Index 768px */
+
+@media screen and (max-width: 768px) {
+    .gridTrabajos {
+        grid-area: section;
+        height: 100%;
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-areas: 
+        "tituloTrabajos"
+        "galeria"
+        "video"
+        "testimonios";
+        grid-column: 768px;
+        grid-template-rows: repeat(4, auto);
+        align-content: center;
+        justify-content: center;
+    }
+
+    .tituloTrabajos {
+        grid-area: tituloTrabajos;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cajaGaleria {
+        grid-area: galeria;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .galeria__titulo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cajaImagenes {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .galeria1, .galeria2, .galeria3, .galeria4 {
+        border: solid #134074;
+        width: 20rem;
+        height: 20rem;
+    }
+    
+    .galeriaMomentanea {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 40px;
+        margin-top: 3rem;
+    }
+    
+    .video {
+        grid-area: video;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .video__titulo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cajaVideo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .testimonios {
+        grid-area: testimonios;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cajaTestimonio {
+        border: solid #0B2545;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 460px;
+    }
+    
+    .testimonios__titulo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .testimonios__foto {
+        width: 9rem;
+    }
+    
+    .testimonios__texto {
+        font-size: 2rem;
+    }
+}
+
+/* Grid Index 480px */
+
+@media screen and (max-width: 480px) {
+    
+    .gridTrabajos {
+        grid-area: section;
+        height: 100%;
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-areas: 
+        "tituloTrabajos"
+        "galeria"
+        "video"
+        "testimonios";
+        grid-column: 480px;
+        grid-template-rows: repeat(4, auto);
+        align-content: center;
+        justify-content: center;
+    }
+
+    .tituloTrabajos {
+        grid-area: tituloTrabajos;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cajaGaleria {
+        grid-area: galeria;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .galeria__titulo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cajaImagenes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .galeria1, .galeria2, .galeria3, .galeria4 {
+        border: solid #134074;
+        width: 20rem;
+        height: 20rem;
+    }
+    
+    .galeriaMomentanea {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 40px;
+        margin-top: 3rem;
+    }
+    
+    .video {
+        grid-area: video;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .video__titulo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cajaVideo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .testimonios {
+        grid-area: testimonios;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cajaTestimonio {
+        border: solid #0B2545;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 460px;
+    }
+    
+    .testimonios__titulo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .testimonios__foto {
+        width: 9rem;
+    }
+    
+    .testimonios__texto {
+        font-size: 2rem;
+    }
+}

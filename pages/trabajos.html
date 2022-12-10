@@ -20,15 +20,110 @@
 
     <title>Trabajos ║ Transporte de Maquinaria</title>
 </head>
-<body>
-    <header>
 
+<body class="gridBody">
+    <header class="gridHeader">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+            
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nuestra-historia.html">Nuestra historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="algunos-trabajos.html">Algunos trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="maquinas.html">Maquinas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                
+                    <span class="navbar-text">
+                        <p class="nombreEmpresa">Transporte de Maquinaria</p>
+                    </span>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <section></section>
+    <section class="gridTrabajos">
+        <h1 class="tituloTrabajos">Algunos de nuestros trabajos</h1>
+        
+        <div class="cajaGaleria">    
+                <!--Aca van a ir fotos que se vayan desplazado solas o una galeria-->
+            <h2 class="galeria__titulo">Galeria de imagenes</h2>
+            
+            <div class="cajaImagenes">
+                <img src="../img/galeria1.jpeg" alt="gal1" class="galeria1">
+                <img src="../img/galeria2.jpeg" alt="gal2" class="galeria2">
+                <img src="../img/galeria3.jpeg" alt="gal3" class="galeria3">
+                <img src="../img/galeria4.jpeg" alt="gal4" class="galeria4">
+            </div>    
+                
+            <!--mas luego se sumar las fotos para la galeria, disculpe las molestias-->
+            <p class="galeriaMomentanea">Proximamente mas fotos</p>
+        </div>
 
-    <footer>
+            
+        <div class="video">
+            <h2 class="video__titulo">Videos</h2>
+            
+            <div class="cajaVideo">
+                <iframe width="420" height="300" 
+                src="https://www.youtube.com/embed/cTWa6mMkO0s" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen class="video__repro"></iframe>
+            </div>   
+        </div>
+    
 
+        <div class="testimonios">
+            <!-- Testimonios -->
+            <h2 class="testimonios__titulo">Experiencias</h2>
+                    
+            <div class="cajaTestimonio">
+                <img src="../img/testimonio.jpg" alt="señorx" class="testimonios__foto">
+                
+                <p class="testimonios__texto">Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. Perferendis sed voluptates, 
+                reiciendis unde voluptatem, 
+                deleniti in eos quod quos enim nemo praesentium 
+                hic amet esse earum minus impedit culpa repellat.</p>
+                <p> El señor X</p>
+            </div>
+        </div>
+    </section>
+
+    <footer  class="gridFooter">
+                
+        <div class="textoFoot1">
+            <p>Seguinos en las redes</p>
+        </div>
+        
+        <div class="redesFooter">
+            <!-- La utilizacion de esta
+            pagina y su contenido es 
+            solo para uso educativo -->
+            <!-- los links hacia las redes sociales seran cambiados cuando exista dicha cuenta-->
+            <a href="https://es-la.facebook.com/"><img src="../img/facebook-new.png" alt="Facebook" class="footImgFace"></a>
+
+            <a href="https://www.instagram.com/"><img src="../img/instagram-new.png" alt="Instagram" class="footImgInsta"></a>
+        </div>
+
+        <div class="textoFoot2">
+            <p>Todos los derechos reservados.</p>
+        </div>
     </footer>
 
 <!-- script Bootstrap -->

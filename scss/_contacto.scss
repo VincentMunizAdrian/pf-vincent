@@ -1,0 +1,47 @@
+/* caracteristicas contacto */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cajaContacto h1 {
+    text-align: center;
+}
+
+.cajaContacto {
+    display: inline;
+}
+
+.fuenteLegend {
+    font-size: 3rem;
+    margin-left: 3rem;
+}
+
+.cajaComentarios {
+    width: 50rem;
+    position: relative;
+    right: -3rem;
+    top: 5rem;
+    gap: 5rem;
+}
+
+.cajaComentarios, p {
+    font-size: 1.3rem;
+}
+
+.cajaUbicacion {
+    width: 50rem;
+    position: relative;
+    left: 95rem;
+    bottom: 34rem;
+}
+
+.imgChat {
+    width: 12rem;
+    position: fixed;
+    right: 1rem;
+    bottom: 2rem;
+    z-index: 1;
+}

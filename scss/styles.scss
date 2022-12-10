@@ -1,0 +1,82 @@
+@import "variables";
+@import "index";
+@import "nuestra-historia";
+@import "trabajos";
+@import "maquinas";
+@import "contacto";
+@import "layout";
+
+/* Condiciones generales */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html { /* Igualdad en unidades de medida 1rem = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #8DA9C4;
+    font-family:'Oswald', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    padding: 50px 50px 0rem;
+    font-size: 5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    color: $color-fuente;
+}
+
+h2 {
+    color: $color-fuente;
+}
+
+p {
+    color: $color-fuente;
+}
+
+header {
+    background-color: #0353A4;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.nombreEmpresa {
+    font-size: 50px;
+}
+
+.nav-link {
+    color: #979DAC;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-toggler {
+    margin-bottom: 20px;
+}
+
+.navbar-toggler-icon {
+    width: 35px;
+    height: 40px;
+}
+
+#navbarText {
+    background-color: #0353A4;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding: 0;
+}

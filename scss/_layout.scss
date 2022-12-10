@@ -1,0 +1,128 @@
+/* grid generales */
+
+.gridBody {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas: 
+    "header"
+    "section"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 16,2rem auto 3rem;
+}
+
+.gridHeader {
+    grid-area: header;
+}
+
+/* Grid Footer */
+
+.gridFooter {
+    background-color: #0353A4;
+    width: 100%;
+    grid-area: footer;
+    grid-gap: 1rem;
+    display: grid;
+    grid-template-areas:
+    "textoFoot1 none"
+    "redesFooter textoFoot2";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 2fr);
+    height: fit-content
+}
+
+.textoFoot1 {
+    grid-area: textoFoot1;
+}
+
+.textoFoot1 p {
+    font-size: 3rem;
+    padding: 0rem 2rem;
+}
+
+.redesFooter {
+    grid-area: redesFooter;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.redesFooter a {
+    padding: 3px 1px 0px 76px;
+}
+
+.footImgFace, .footImgInsta {
+    width: 3rem;
+}
+
+.textoFoot2 {
+    grid-area: textoFoot2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.textoFoot2 p {
+    font-size: 3rem;
+}
+
+/* Grid Footer 480px */
+
+@media screen and (max-width: 480px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .gridFooter {
+        background-color: #0353A4;
+        display: grid;
+        grid-template-areas:
+        "textoFoot1"
+        "redesFooter" 
+        "textoFoot2";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+        
+    .textoFoot1 {
+        grid-area: textoFoot1;
+    }
+        
+    .textoFoot1 p {
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+        
+    .redesFooter {
+        grid-area: redesFooter;
+        display: flex;
+        flex-direction: row;
+        align-content: stretch;
+        justify-content: start;
+    }
+        
+    .redesFooter a {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+        
+    .textoFoot2 {
+        grid-area: textoFoot2;
+    }
+    
+    .textoFoot2 p {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}

@@ -20,15 +20,83 @@
 
     <title>Inicio ║ Transporte de Maquinaria</title>
 </head>
-<body>
-    <header>
 
+<body>
+    <header class="gridHeader">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+            
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/nuestra-historia.html">Nuestra historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/algunos-trabajos.html">Algunos trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/maquinas.html">Maquinas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                
+                    <span class="navbar-text">
+                        <p class="nombreEmpresa">Transporte de Maquinaria</p>
+                    </span>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <section></section>
+    <section class="gridIndex">
+        <h1 class="tituloIndex">Bienvenidos</h1>
 
-    <footer>
+        <!-- se ira desarrollando un texto en cada <p>, por ahora solo sera lorem-->
+        <div class="textoIndex" data-aos="zoom-in">
+            <p>Lorem, ipsum dolor sit amet consectetur 
+            adipisicing elit. Deserunt dolore possimus minus tenetur 
+            rerum nam doloremque a rem minima itaque! 
+            Quas praesentium aliquid repellat maiores, ratione magnam. 
+            Asperiores, vel veritatis!</p>
+            <p> Lorem, ipsum dolor sit amet consectetur 
+            adipisicing elit. Deserunt dolore possimus minus tenetur 
+            rerum nam doloremque a rem minima itaque! 
+            Quas praesentium aliquid repellat maiores, ratione magnam. 
+            Asperiores, vel veritatis!</p>
+        </div>
+            
+        <div data-aos="zoom-in" class="imgIndex">
+                <!-- Aca se van a agregar imagenes que vayan cambiando -->
+                <img src="img/camionIndex.jpeg" alt="Camion" class="camionIndex">
+            </div>
+    </section>
 
+    <footer  class="gridFooter">
+                
+        <div class="textoFoot1">
+            <p>Seguinos en las redes</p>
+        </div>
+        
+        <div class="redesFooter">
+            <!-- La utilizacion de esta pagina y su contenido es solo para uso educativo -->
+            <!-- los links hacia las redes sociales seran cambiados cuando exista dicha cuenta-->
+            <a href="https://es-la.facebook.com/"><img src="img/facebook-new.png" alt="Facebook" class="footImgFace"></a>
+
+            <a href="https://www.instagram.com/"><img src="img/instagram-new.png" alt="Instagram" class="footImgInsta"></a>
+        </div>
+
+        <div class="textoFoot2">
+            <p>Todos los derechos reservados.</p>
+        </div>
     </footer>
 
 <!-- script Bootstrap -->
