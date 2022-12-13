@@ -82,7 +82,7 @@
         margin: 30px 40px;
     
         p {
-            font-size: 2rem;
+            font-size: 20px;
         }
     }
     
@@ -92,38 +92,32 @@
     }
 }
 
-/* Grid Index 992px */
+/* Grid Index 991px */
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .gridIndex {
         grid-area: section;
         display: grid;
         grid-gap: 20px;
         grid-template-areas:
-        "tituloIndex" 
         "textoIndex " 
         "imgIndex   ";
         grid-template-columns: 100%;
-        grid-template-rows: 285px 500px 500px;
+        grid-template-rows: 500px 500px;
         align-content: center;
     }
-    
-    .tiutloIndex {
-        grid-area: tituloIndex;
-    }
-    
+
     .textoIndex {
         grid-area: textoIndex;
         display: flex;
         flex-direction: column;
-        align-content: flex-start;
+        align-content: center;
         justify-content: center;
         align-items: center;
-        margin: 20px 100px;
-    }
     
-    .textoIndex p {
-        font-size: 25px;
+        p {
+            font-size: 25px;
+        }
     }
     
     .imgIndex {
@@ -131,12 +125,6 @@
         display: flex;
         align-self: center;
         justify-content: center;
-    }
-    
-    .camionIndex {
-        width: 50rem;
-        height: 45rem;
-        border-radius: 1rem;
     }
 }
 

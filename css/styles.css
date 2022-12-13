@@ -74,35 +74,31 @@
     margin: 30px 40px;
   }
   .parrafoIndex p {
-    font-size: 2rem;
+    font-size: 20px;
   }
   .imgIndex img {
     width: 42rem;
     border-radius: 1rem;
   }
 }
-/* Grid Index 992px */
-@media screen and (max-width: 992px) {
+/* Grid Index 991px */
+@media screen and (max-width: 991px) {
   .gridIndex {
     grid-area: section;
     display: grid;
     grid-gap: 20px;
-    grid-template-areas: "tituloIndex" "textoIndex " "imgIndex   ";
+    grid-template-areas: "textoIndex " "imgIndex   ";
     grid-template-columns: 100%;
-    grid-template-rows: 285px 500px 500px;
+    grid-template-rows: 500px 500px;
     align-content: center;
-  }
-  .tiutloIndex {
-    grid-area: tituloIndex;
   }
   .textoIndex {
     grid-area: textoIndex;
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    align-content: center;
     justify-content: center;
     align-items: center;
-    margin: 20px 100px;
   }
   .textoIndex p {
     font-size: 25px;
@@ -112,11 +108,6 @@
     display: flex;
     align-self: center;
     justify-content: center;
-  }
-  .camionIndex {
-    width: 50rem;
-    height: 45rem;
-    border-radius: 1rem;
   }
 }
 /* Grid Index 768px */
@@ -1837,11 +1828,10 @@ Body {
     font-size: 40px;
   }
 }
-/* Grid header 992px */
-@media screen and (max-width: 992px) {
+/* Grid header 991px */
+@media screen and (max-width: 991px) {
   .gridHeader {
     padding: 0;
-    position: relative;
   }
   .navbar-toggler {
     margin-top: 20px;
@@ -1867,7 +1857,7 @@ Body {
 }
 /* Grid Footer */
 .gridFooter {
-  background-color: #0353A4;
+  background-color: #134074;
   width: 100%;
   grid-area: footer;
   grid-gap: 1rem;
