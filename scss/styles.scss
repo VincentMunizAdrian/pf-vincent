@@ -20,14 +20,14 @@ html { /* Igualdad en unidades de medida 1rem = 10px */
 body {
     background-color: #8DA9C4;
     font-family:'Oswald', sans-serif;
+    min-height: 100vh;
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 h1 {
-    padding: 50px 50px 0rem;
     font-size: 5rem;
     font-weight: bold;
     text-decoration: underline;
@@ -40,10 +40,11 @@ h2 {
 
 p {
     color: $color-fuente;
+    margin: 0;
 }
 
 header {
-    background-color: #0353A4;
+    background-color: #134074;
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -71,10 +72,6 @@ header {
 .navbar-toggler-icon {
     width: 35px;
     height: 40px;
-}
-
-#navbarText {
-    background-color: #0353A4;
 }
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
