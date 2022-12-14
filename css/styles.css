@@ -100,6 +100,9 @@
     justify-content: center;
     align-items: center;
   }
+  .textoIndex h1 {
+    margin: 0;
+  }
   .textoIndex p {
     font-size: 25px;
   }
@@ -108,82 +111,50 @@
     display: flex;
     align-self: center;
     justify-content: center;
+    margin: 0;
   }
 }
-/* Grid Index 768px */
-@media screen and (max-width: 768px) {
+/* Grid Index 769px */
+@media screen and (max-width: 769px) {
   .gridIndex {
-    grid-area: section;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-areas: "tituloIndex" "textoIndex " "imgIndex   ";
-    grid-template-columns: 100%;
-    grid-template-rows: 285px 500px 500px;
+    display: flex;
+    flex-direction: column;
     align-content: center;
-  }
-  .tiutloIndex {
-    grid-area: tituloIndex;
+    justify-content: center;
+    margin: 0;
   }
   .textoIndex {
-    grid-area: textoIndex;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
     justify-content: center;
     align-items: center;
-    margin: 20px 100px;
   }
   .textoIndex p {
     font-size: 25px;
   }
   .imgIndex {
-    grid-area: imgIndex;
     display: flex;
-    align-self: center;
-    justify-content: center;
-  }
-  .camionIndex {
+    align-items: center;
+    justify-items: center;
     width: 38rem;
     height: 32rem;
     border-radius: 1rem;
+  }
+  .imgIndex .carousel-inner img {
+    margin-left: 25px;
   }
 }
 /* Grid Index 480px */
 @media screen and (max-width: 480px) {
-  .gridIndex {
-    grid-area: section;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-areas: "tituloIndex" "textoIndex " "imgIndex   ";
-    grid-template-columns: 100%;
-    grid-template-rows: 27rem 78rem 50rem;
-    align-content: center;
-  }
-  .tiutloIndex {
-    grid-area: tituloIndex;
-  }
-  .textoIndex {
-    grid-area: textoIndex;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    justify-content: center;
-    align-items: center;
-    margin: 15px 100px;
-  }
   .textoIndex p {
-    font-size: 25px;
+    font-size: 20px;
   }
   .imgIndex {
-    grid-area: imgIndex;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-  }
-  .camionIndex {
-    width: 38rem;
-    height: 32rem;
+    width: 34rem;
+    height: 28rem;
     border-radius: 1rem;
+    margin: 0;
   }
 }
 /* caracteristicas historia */
