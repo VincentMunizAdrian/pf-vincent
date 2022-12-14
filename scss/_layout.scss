@@ -50,6 +50,7 @@ Body {
     .container-fluid {
         background-color: #134074;
         border-radius: 1rem;
+        z-index: 1;
     }
 
     .logo{
@@ -134,62 +135,52 @@ Body {
     }
 }
 
-/* Grid footer 480px */
+/* Grid footer 991px */
 
-@media screen and (max-width: 480px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .gridFooter {
-        background-color: #0353A4;
-        display: grid;
-        grid-template-areas:
-        "textoFoot1"
-        "redesFooter" 
-        "textoFoot2";
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-        
-    .textoFoot1 {
-        grid-area: textoFoot1;
-    }
-        
-    .textoFoot1 p {
-        font-size: 3rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
-        
-    .redesFooter {
-        grid-area: redesFooter;
-        display: flex;
-        flex-direction: row;
-        align-content: stretch;
-        justify-content: start;
-    }
-        
-    .redesFooter a {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-    }
-        
-    .textoFoot2 {
-        grid-area: textoFoot2;
+@media screen and (max-width: 991px) {
+    .redesFooter p {
+        font-size: 30px;
     }
     
-    .textoFoot2 p {
-        font-size: 2rem;
+    .textoFooter2 {
         display: flex;
         flex-direction: column;
+        text-align: center;
         justify-content: center;
+    
+        p {
+            font-size: 25px;
+        }
+    }
+}
+
+/* Grid footer 769px */
+
+@media screen and (max-width: 769px) {
+    .gridFooter {
+        display: flex;
+        flex-direction: column;
         align-content: center;
+        justify-content: center;
+    }
+
+    .redesFooter {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+
+        .barraSeparadora {
+            display: none;
+        }
+    }
+
+    .textoFoot2 {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
     }
 }
