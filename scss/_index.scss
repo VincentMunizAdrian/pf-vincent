@@ -27,7 +27,7 @@
     margin: 30px 100px;
 
     p {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -92,9 +92,9 @@
     }
 }
 
-/* Grid Index 991px */
+/* Grid Index 991.40px */
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991.40px) {
     .gridIndex {
         grid-area: section;
         display: grid;

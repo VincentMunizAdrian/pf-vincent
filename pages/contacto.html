@@ -24,7 +24,8 @@
 <body class="gridBody">
     <header class="gridHeader">
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">            
+            <div class="container-fluid">
+            
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -40,8 +41,17 @@
                         <li class="nav-item">
                             <a class="nav-link" href="trabajos.html">Algunos trabajos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="maquinas.html">Maquinas</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="maquinas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Maquinas</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="maquinas.html">Maquinas</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="maquinas.html#maquina1">Maquina1</a></li>
+                                <li><a class="dropdown-item" href="maquinas.html#maquina2">Maquina2</a></li>
+                                <li><a class="dropdown-item" href="maquinas.html#maquina3">maquina3</a></li>
+                                <li><a class="dropdown-item" href="maquinas.html#maquina4">maquina4</a></li>
+                                <li><a class="dropdown-item" href="maquinas.html#maquina5">maquina5</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="contacto.html">Contacto</a>
@@ -54,6 +64,10 @@
                 </div>
             </div>
         </nav>
+        
+        <span class="logo">
+            <a href="../index.html"><img src="../img/logoTemporal.png" alt="camionLogo"></a>
+        </span>
     </header>
 
     <main class="cajaContacto">
@@ -110,23 +124,27 @@
     </span>
 
     <footer  class="gridFooter">
-                
-        <div class="textoFoot1">
-            <p>Seguinos en las redes</p>
-        </div>
-        
         <div class="redesFooter">
-            <!-- La utilizacion de esta
-            pagina y su contenido es 
-            solo para uso educativo -->
-            <!-- los links hacia las redes sociales seran cambiados cuando exista dicha cuenta-->
-            <a href="https://es-la.facebook.com/"><img src="img/facebook-new.png" alt="Facebook" class="footImgFace"></a>
+            <div>
+                <p class="textoFoot1">Seguinos en las redes</p>
+            </div>
 
-            <a href="https://www.instagram.com/"><img src="img/instagram-new.png" alt="Instagram" class="footImgInsta"></a>
+            <div class="barraSeparadora">
+                <!-- Barra para separar footer-->
+            </div>
+            <div class="redes">
+                <!-- La utilizacion de esta pagina y su contenido es solo para uso educativo -->
+                <!-- los links hacia las redes sociales seran cambiados cuando exista dicha cuenta-->
+                <a href="https://es-la.facebook.com/"><img src="../img/facebook-new.png" alt="Facebook" class="footImgFace"></a>
+
+                <a href="https://www.instagram.com/"><img src="../img/instagram-new.png" alt="Instagram" class="footImgInsta"></a>
+                
+                <a href="https://www.youtube.com/channel/UCE0f56Y9-I3dAWDAuRn8R3g"><img src="../img/youtubeIcon.png" alt="YouTube" class="footImgYoutube"></a>
+            </div>
         </div>
 
-        <div class="textoFoot2">
-            <p>Todos los derechos reservados.</p>
+        <div class="textoFooter2">
+            <p>Todos los derechos reservados</p>
         </div>
     </footer>
 
