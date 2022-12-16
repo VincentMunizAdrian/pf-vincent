@@ -24,14 +24,6 @@
     justify-content: center;
 }
 
-.cajaGaleria {
-    grid-area: galeria;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-}
-
 .galeria__titulo {
     display: flex;
     flex-direction: column;
@@ -39,27 +31,39 @@
     justify-content: center;
 }
 
-.cajaImagenes {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+.grid-container {
+    display: galeria;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
 }
 
-.galeria1, .galeria2, .galeria3, .galeria4 {
-    border: solid #134074;
-    width: 20rem;
-    height: 20rem;
-}
-
-.galeriaMomentanea {
+.grid-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    font-size: 40px;
-    margin-top: 3rem;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+@media (min-width: 600px) {
+    .wide {
+        grid-column: span 2;
+    }
+
+    .tall {
+        grid-row: span 2;
+    }
 }
 
 .video {
@@ -120,7 +124,7 @@
 
 /* Grid Index 1200px */
 
-@media screen and (max-width: 1200px) {
+/*@media screen and (max-width: 1200px) {
     .gridTrabajos {
         grid-area: section;
         height: 100%;
@@ -241,7 +245,7 @@
 
 /* Grid Index 992px */
 
-@media screen and (max-width: 992px) {
+/*@media screen and (max-width: 992px) {
     .gridTrabajos {
         grid-area: section;
         height: 100%;
@@ -358,11 +362,11 @@
     .testimonios__texto {
         font-size: 2rem;
     }
-}
+}*/
 
 /* Grid Index 768px */
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     .gridTrabajos {
         grid-area: section;
         height: 100%;
@@ -479,11 +483,11 @@
     .testimonios__texto {
         font-size: 2rem;
     }
-}
+}*/
 
 /* Grid Index 480px */
 
-@media screen and (max-width: 480px) {
+/*@media screen and (max-width: 480px) {
     
     .gridTrabajos {
         grid-area: section;
@@ -601,4 +605,4 @@
     .testimonios__texto {
         font-size: 2rem;
     }
-}
+}*/
